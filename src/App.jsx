@@ -1,5 +1,6 @@
 import './App.css'
 import BestMonthOffer from './components/BestMonthOffer'
+import DealOfTheDay from './components/DealOfTheDay'
 import ExploreOurProducts from './components/ExploreOurProducts'
 import FeaturedShoes from './components/FeaturedShoes'
 import Footer from './components/Footer'
@@ -8,12 +9,13 @@ import StartShoppingNow from './components/StartShoppingNow'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div>
       <Navbar />
       
-      <main className="flex-grow">
+      <main>
         <StartShoppingNow />
         <FeaturedShoes />
+        <DealOfTheDay/>
         <ExploreOurProducts />
         <BestMonthOffer />
       </main>

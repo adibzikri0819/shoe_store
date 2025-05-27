@@ -46,7 +46,6 @@ const featuredShoes = [
 const FeaturedShoes = () => {
   return (
     <div className="w-full py-10 bg-white">
-      <h2 className="text-center text-2xl font-bold mb-6">Featured Shoes</h2>
       <div className="flex overflow-x-auto gap-6 px-4 scrollbar-hide">
         {featuredShoes.map((item, index) => (
           <div key={index} className="flex-shrink-0 w-48 text-center">
