@@ -72,7 +72,7 @@ const OurFeaturedProducts = () => {
     <section className="py-10 px-4 md:px-10">
       <h2 className="text-3xl font-bold text-left mb-2">Our Featured Products</h2>
       <div className="text-center mb-8">
-        
+        {/* optional subheading or content */}
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -87,12 +87,12 @@ const OurFeaturedProducts = () => {
               <span className="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">-20%</span>
               <button className="absolute top-2 right-2 text-gray-400 hover:text-red-500 text-xl">♡</button>
             </div>
-            <h3 className="text-sm font-medium text-gray-800">{product.title}</h3>
-            <div className="flex items-center space-x-2 mt-2">
+            <h3 className="text-sm font-medium text-gray-800 text-left">{product.title}</h3>
+            <div className="flex items-center space-x-2 mt-2 text-left">
               <span className="text-lg font-bold text-orange-600">{product.price}</span>
               <span className="text-sm text-gray-400 line-through">{product.discount}</span>
             </div>
-            <p className="text-xs text-gray-500 mt-1">{product.rating} ⭐ reviews</p>
+            <p className="text-xs text-gray-500 mt-1 text-left">{product.rating} ⭐ reviews</p>
           </div>
         ))}
       </div>

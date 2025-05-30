@@ -88,12 +88,12 @@ const ExploreOurProducts = () => {
               <span className="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded">-20%</span>
               <button className="absolute top-2 right-2 text-gray-400 hover:text-red-500 text-xl">♡</button>
             </div>
-            <h3 className="text-sm font-medium text-gray-800">{product.title}</h3>
+            <h3 className="text-sm font-medium text-gray-800 text-left">{product.title}</h3>
             <div className="flex items-center space-x-2 mt-2">
-              <span className="text-lg font-bold text-orange-600">{product.price}</span>
-              <span className="text-sm text-gray-400 line-through">{product.discount}</span>
+              <span className="text-lg font-bold text-orange-600 text-left">{product.price}</span>
+              <span className="text-sm text-gray-400 line-through text-left">{product.discount}</span>
             </div>
-            <p className="text-xs text-gray-500 mt-1">{product.rating} ⭐ reviews</p>
+            <p className="text-xs text-gray-500 mt-1 text-left">{product.rating} ⭐ reviews</p>
           </div>
         ))}
       </div>
