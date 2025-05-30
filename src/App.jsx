@@ -5,6 +5,7 @@ import ExploreOurProducts from './components/ExploreOurProducts'
 import FeaturedShoes from './components/FeaturedShoes'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import OurFeaturedProducts from './components/OurFeaturedProducts'
 import StartShoppingNow from './components/StartShoppingNow'
 
 function App() {
@@ -14,10 +15,11 @@ function App() {
       
       <main>
         <StartShoppingNow />
-        <FeaturedShoes />
+        {/* <FeaturedShoes /> */}
         <DealOfTheDay/>
         <ExploreOurProducts />
         <BestMonthOffer />
+        <OurFeaturedProducts/>
       </main>
       
       <Footer />

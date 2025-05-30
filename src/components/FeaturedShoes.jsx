@@ -26,17 +26,17 @@ const featuredShoes = [
     products: 9,
     image: '/images/shoes_featured_one.jpg',
   },
-    {
+  {
     name: 'Pumpkin',
     products: 9,
     image: '/images/shoes_featured_one.jpg',
   },
-    {
+  {
     name: 'Pumpkin',
     products: 9,
     image: '/images/shoes_featured_one.jpg',
   },
-    {
+  {
     name: 'Pumpkin',
     products: 9,
     image: '/images/shoes_featured_one.jpg',
@@ -46,30 +46,40 @@ const featuredShoes = [
 const FeaturedShoes = () => {
   return (
     <div className="w-full py-10 bg-white">
-      <div className="flex overflow-x-auto gap-6 px-4 scrollbar-hide">
-        {featuredShoes.map((item, index) => (
-          <div key={index} className="flex-shrink-0 w-48 text-center">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="h-40 object-contain mx-auto"
-            />
-            <p className="mt-2 font-semibold text-gray-800">{item.name}</p>
-            <p className="text-sm text-gray-500">{item.products} products</p>
-          </div>
-        ))}
-      </div>
+      <div className="px-4 sm:px-6 lg:px-8">
+        {/* Scrollable container */}
+        <div className="flex overflow-x-auto gap-4 sm:gap-6 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+          {featuredShoes.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-36 sm:w-48 text-center"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="h-32 sm:h-40 object-contain mx-auto rounded-md"
+              />
+              <p className="mt-2 font-semibold text-gray-800 text-sm sm:text-base">
+                {item.name}
+              </p>
+              <p className="text-xs sm:text-sm text-gray-500">
+                {item.products} products
+              </p>
+            </div>
+          ))}
+        </div>
 
-      {/* Dots (static for now) */}
-      <div className="flex justify-center mt-6 space-x-2">
-        {[...Array(4)].map((_, i) => (
-          <div
-            key={i}
-            className={`w-2 h-2 rounded-full ${
-              i === 1 ? 'bg-blue-500' : 'bg-gray-300'
-            }`}
-          ></div>
-        ))}
+        {/* Pagination dots */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {[...Array(4)].map((_, i) => (
+            <div
+              key={i}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                i === 1 ? 'bg-blue-500' : 'bg-gray-300'
+              }`}
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );

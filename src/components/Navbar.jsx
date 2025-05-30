@@ -46,7 +46,7 @@ export default function Navbar() {
               </div>
 
               {/* Title on the far left */}
-              <div className="flex flex-1 items-center justify-start">
+              <div className="hidden sm:flex flex-1 items-center justify-start">
                 <h5 className="text-white font-semibold">Shoe Store</h5>
               </div>
 
